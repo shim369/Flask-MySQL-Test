@@ -1,0 +1,17 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+Form Page | Flask Test
+{% endblock  %}
+
+{% block header %}
+Form Page
+{% endblock header %}
+
+{% block content %}
+<form action="/result" method="get">
+    <label for="myname">Name</label>
+    <input type="text" name="myname" id="myname">
+    <button type="submit">Submit</button>
+</form>
+{% endblock  %}

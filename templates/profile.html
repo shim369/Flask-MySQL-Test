@@ -1,0 +1,18 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+{{ myname }} Profile Page | Flask Test
+{% endblock  %}
+
+{% block header %}
+{{ myname }} Profile Page
+{% endblock header %}
+
+{% block content %}
+<h2>Hobby</h2>
+<ul>
+    {% for hobby in hobbies %}
+    <li>{{ hobby }}</li>
+    {% endfor %}
+</ul>
+{% endblock  %}

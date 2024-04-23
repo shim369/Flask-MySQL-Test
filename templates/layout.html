@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock  %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>{% block header %}{% endblock  %}</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/">Top</a>
+                </li>
+                <li>
+                    <a href="/about">About</a>
+                </li>
+                <li>
+                    <a href="/form">Form</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div>{% block content %}{% endblock  %}</div>
+    </main>
+    <footer class="footer">
+        <small>&copy; Flask Test</small>
+    </footer>
+</body>
+
+</html>
