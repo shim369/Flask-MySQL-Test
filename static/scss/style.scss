@@ -4,10 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding: 1rem 2rem;
-}
-
 ul {
     list-style: none;
 }
@@ -16,6 +12,7 @@ ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 1.5rem;
     li {
         display: inline-block;
         margin:  0 1rem;
@@ -24,6 +21,7 @@ ul {
 
 main {
     padding: 2rem;
+    height: 100vh;
 }
 
 .footer {
