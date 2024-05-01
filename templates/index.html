@@ -5,6 +5,8 @@ Flask Test
 {% endblock  %}
 
 {% block content %}
-Top Page contents
+<div class="my-5 text-center">
+    <a href="{{ url_for('main.add_task') }}" class="btn btn-primary">Add Task</a>
+</div>
 {% endblock  %}
 
