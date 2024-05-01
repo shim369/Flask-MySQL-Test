@@ -1,15 +1,13 @@
 from flask import Blueprint,render_template,request,redirect,session
 main = Blueprint('main',__name__)
 
-@main.route("/")
+@main.route("/", methods=["GET"])
 def index():
     return render_template("index.html")
 
-@main.route("/about")
-def profile():
-    myname = "Shim"
-    hobbies = ["Sleep","Movie","Run"]
-    return render_template("profile.html", myname = myname, hobbies = hobbies)
+@main.route("/addtask", methods=["GET","POST"])
+def add_task():
+    return render_template("addtask.html")
 
 @main.route("/form", methods=["GET","POST"])
 def form():
