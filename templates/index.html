@@ -1,6 +1,6 @@
 {% extends 'layout.html' %} {% block title %} Flask Test {% endblock %} {% block
 content %}
-<div class="w-70 d-flex p-5">
+<div class="d-flex p-5">
   <table class="table">
     <thead>
       <tr>
@@ -17,8 +17,8 @@ content %}
         <td>{{ item.taskname }}</td>
         <td>{{ item.url }}</td>
         <td>
-            <button class="btn btn-success"><i class="bi bi-pencil-square"></i></button>
-            <button class="btn btn-danger"><i class="bi bi-trash-fill"></i></button>
+            <button class="btn btn-outline-success"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-outline-danger"><i class="bi bi-trash-fill"></i></button>
         </td>
       </tr>
       {% endfor %}
