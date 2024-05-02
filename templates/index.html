@@ -1,12 +1,25 @@
-{% extends 'layout.html' %}
-
-{% block title %}
-Flask Test
-{% endblock  %}
-
-{% block content %}
-<div class="my-5 text-center">
-    <a href="{{ url_for('main.add_task') }}" class="btn btn-primary">Add Task</a>
+{% extends 'layout.html' %} {% block title %} Flask Test {% endblock %} {% block
+content %}
+<div class="w-70 d-flex p-5">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Task Name</th>
+        <th scope="col">Task URL</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody class="table-group-divider">
+      {% for item in data %}
+      <tr>
+        <th scope="row">{{ item.id }}</th>
+        <td>{{ item.taskname }}</td>
+        <td>{{ item.url }}</td>
+        <td></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
 </div>
-{% endblock  %}
-
+{% endblock %}
