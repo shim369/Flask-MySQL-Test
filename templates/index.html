@@ -15,7 +15,7 @@ content %}
       <tr>
         <th scope="row">{{ item.id }}</th>
         <td>{{ item.taskname }}</td>
-        <td>{{ item.url }}</td>
+        <td><a href="{{ item.url }}" target="_blank">{{ item.url }}</a></td>
         <td>
             <a href="/edittask/{{ item.id }}" class="btn btn-outline-success"><i class="bi bi-pencil-square"></i></a>
             <button class="btn btn-outline-danger" onclick="confirmDelete('{{item.id}}')"><i class="bi bi-trash-fill"></i></button>
