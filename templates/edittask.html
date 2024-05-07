@@ -13,10 +13,10 @@ Edit Task Page | Flask Test
                     <h2 class="mb-4 pb-2 pd-md-0 mb-md-5 px-md-2 text-center">Edit Task</h2>
                     <form action="/edittask/{{task.id}}" method="post">
                         <div class="form-group">
-                            <input type="text" id="taskname" name="taskname" class="form-control" placeholder={{task.taskname}}>
+                            <input type="text" id="taskname" name="taskname" class="form-control" value="{{task.taskname}}">
                         </div>
                         <div class="form-group mt-3">
-                            <input type="text" id="url" name="url" class="form-control" placeholder={{task.url}}>
+                            <input type="text" id="url" name="url" class="form-control" value="{{task.url}}">
                         </div>
                         <div class="form-group mt-3 text-center">
                         <button type="submit" class="btn btn-success">Update</button>
