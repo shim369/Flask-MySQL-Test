@@ -1,8 +1,8 @@
 from flask import Flask
 from config import Config
 from extensions import db
-from controllers.main_controller import main
 from flask_migrate import Migrate
+from routes import main
 
 def create_app():
     app = Flask(__name__)
@@ -21,4 +21,4 @@ def register_resources(app):
 if __name__ == "__main__":
     app = create_app()
     app.secret_key = "abcd1234"
-    app.run('127.0.0.1', 5000, debug=True)
+    app.run('127.0.0.1', 5000)
